@@ -1,14 +1,16 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-}
 
-body {
+}
+main {
     height: 100%;
+    background-color: #fa8128;
 }
-
+/* HÄR ÄR HERO */
 .hero-image {
     background: url(./images/orange-tree.jpeg);
     background-size: cover;
@@ -45,10 +47,7 @@ h2 {
     padding-top: 2rem;
 }
 
-main {
-    background-color: #fa8128;
-}
-
+/* HÄR ÄR FORMULÄRET */
 .container-box {
     background-color: bisque;
     margin: 0 9rem 2rem;
@@ -77,18 +76,57 @@ input {
     padding: 10px;
     font-size: 1rem;
 }
+/* CHECKBOXES */
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin: 10px 5px;
+    font-size: 16px;
+    user-select: none;
 
-.checkbox-options input {
-    display: inline;
 }
-
-/*input #box-of-oranges {
-    height: 2rem;
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
 }
-
-#box-of-oranges {
-    font-size: 2rem;
-}*/
+.custom-checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 19px;
+    width: 19px;
+    background-color: #facba9;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.checkbox-container:hover input ~ .custom-checkbox {
+    background-color: #f9a264;
+}
+.checkbox-container input:checked ~.custom-checkbox {
+    background-color: #fa8128;
+}
+.custom-checkbox:after {
+    content: ""; 
+    position: absolute;
+    width: 5px;
+    height: 9px;
+    border: solid bisque;
+    border-width: 0 3px 3px 0;
+    top: 2px;
+    left: 5.5px;
+    transform: rotate(45deg);
+    display: none;
+}
+.checkbox-container input:checked ~.custom-checkbox:after {
+    display: block;
+}
+.checkbox-container input:focus + .custom-checkbox {
+    outline: #fa8128 auto 4px;
+}
 
 
 .radio-option input {
@@ -106,14 +144,4 @@ footer {
     background-color: #fa8128;
     text-align: center;
     padding: 2rem;
-}
-
-
-
-
-@media (max-width: 668px) {
-    .container-box {
-        margin-left: 4rem;
-        margin-right: 4rem;
-    }
 }
