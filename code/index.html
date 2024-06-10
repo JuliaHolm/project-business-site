@@ -14,8 +14,8 @@
     <header class="hero-image">
       <div class="hero-text">
         <h1>Orange County</h1>
-        <h2>Where nature's goodness meets your cravings</h2>
-        <h2 class="italic">This is the site for you who want to order the best oranges in the country.</h2>
+        <h2>Where Nature's Goodness Meets Your Cravings</h2>
+        <h2 class="italic">This is the Site for You Who Want to Order the Best Oranges in the Country.</h2>
       </div>
     </header>
     <!-- Hero section ends here -->
@@ -25,40 +25,51 @@
         <!-- Form starts here -->
         <div class="container-box">
           <form action="https://httpbin.org/anything" method="post">
+            
+            
             <!-- What do you need CHECKBOX -->
             <div class="form-area">
-              <label for="order">What do you need?</label>
+
+              <label for="order">What do You Need?</label>
               <!-- Checkbox option -->
-              <div class="checkbox-options">
-                <input type="checkbox" name="order" id="box-of-oranges" value="box-of-oranges">
-                <label for="box-of-oranges">Box of oranges</label>
+              <div class="wrapper-row">
+                <label class="checkbox-container" for="box-of-oranges">Box of Oranges
+                  <input type="checkbox" name="order" id="box-of-oranges" value="box-of-oranges" checked>
+                  <span class="custom-checkbox"></span>
+                </label>
               </div>
               <!-- Checkbox option -->
-              <div class="checkbox-options">
-                <input type="checkbox" name="order" id="orange-juice" value="orange-juice">
-                <label for="orange-juice">Orange juice</label>
+              <div class="wrapper-row">
+                <label class="checkbox-container" for="orange-juice">Orange Juice
+                  <input type="checkbox" name="order" id="orange-juice" value="orange-juice">
+                  <span class="custom-checkbox"></span>
+                </label>
               </div>
               <!-- Checkbox option -->
-              <div class="checkbox-options">
-                <input type="checkbox" name="order" id="satsumas" value="satsumas">
-                <label for="satsumas">Satsumas</label>
+              <div class="wrapper-row">
+                <label class="checkbox-container" for="satsumas">Satsumas
+                  <input type="checkbox" name="order" id="satsumas" value="satsumas">
+                  <span class="custom-checkbox"></span>
+                </label>
               </div>
               <!-- Checkbox option -->
-              <div class="checkbox-options">
-                <input type="checkbox" name="order" id="orange-marmalade" value="orange-marmalade">
-                <label for="orange-marmelade">Orange marmalade</label>
+              <div class="wrapper-row">
+                <label class="checkbox-container" for="orange-marmelade">Orange Marmalade
+                  <input type="checkbox" name="order" id="orange-marmalade" value="orange-marmalade">
+                  <span class="custom-checkbox"></span>
+                </label>
               </div>
             </div>
 
             <!-- Delivery DATE -->
             <div class="form-area">
-              <label for="delivery">Delivery date</label>
+              <label for="delivery">Delivery Date</label>
               <input type="date" name="delivery" id="delivery">
             </div>
 
             <!-- Name TEXT-->
             <div class="form-area">
-              <label for="name">Full name</label>
+              <label for="name">Full Name</label>
               <input type="text" name="name" id="name" placeholder="E.g John Johnson" required>
             </div>
 
@@ -70,7 +81,7 @@
 
             <!-- Phone number TEL -->
             <div class="form-area">
-              <label for="number">Phone number</label>
+              <label for="number">Phone Number</label>
               <input type="tel" name="number" id="number" placeholder="123 12 12 12" required>
             </div>
 
@@ -81,36 +92,36 @@
                 <!-- Street name TEXT-->
                 <label for="street-name"></label>
                 <div class="address">
-                  <input type="text" name="street-name" id="street-name" placeholder="Street Name nr123" required>
+                  <input type="text" name="street-name" id="street-name" placeholder="Street Name Nr 123" required>
                 </div>
                 <!-- ZIP code NUMBER -->
                 <label for="zip"></label>
                 <div class="address">
-                  <input type="number" name="zip" id="zip" placeholder="ZIP Code" required> <!-- Add maxlength (maybe?) -->
+                  <input type="text" name="zip" id="zip" pattern="[0-9]*"placeholder="ZIP Code" required> <!-- Add maxlength (maybe?) -->
                 </div>
                 <!-- City TEXT -->
                 <label for="city"></label>
                 <div class="address">
-                  <input type="text" name="city" id="city" placeholder="City name" required>
+                  <input type="text" name="city" id="city" placeholder="City Name" required>
                 </div>
               </fieldset>
             </div>
 
             <!-- Text message -->
             <div class="form-area">
-              <label for="message">Something we should know?</label>
+              <label for="message">Something We Should Know?</label>
               <textarea name="message" id="message" rows="10" placeholder="Type here..."></textarea>
             </div>
 
             <!-- Radio buttons -->
-            <label>Would you like to subscribe to our juicy newsletter?</label>
+            <label>Subscribe to Our Juicy Newsletter?</label>
             <div class="radio-option">
               <input type="radio" name="newsletter" id="newsletter-yes" value="yes">
-              <label for="newsletter-yes">Yes, please!</label>
+              <label for="newsletter-yes">Yes, Please!</label>
             </div>
             <div class="radio-option">
               <input type="radio" name="newsletter" id="newsletter-no" value="no">
-              <label for="newsletter-no">No, I don't like oranges 😢</label>
+              <label for="newsletter-no">No, I Don't Like Oranges 😢</label>
             </div>
 
             <!-- SUBMIT button-->
@@ -123,7 +134,7 @@
     <!-- Footer -->
     <footer>
       <p>Copyright Orange County 2023</p>
-      <p>Made by group Orange 1</p>
+      <p>Made by Group Orange 1</p>
     </footer>
   </body>
 </html>
